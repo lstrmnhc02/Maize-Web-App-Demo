@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wa-ize: Maize Storage Monitoring</title>
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Wa-ize: Maize Storage Environmental Monitoring</h1>
+        <p>Automatic environmental stabilization & spoilage risk prediction</p>
+    </header>
+
+    <section class="dashboard">
+        <div class="card">
+            <h2>Real-Time Microclimate</h2>
+            <canvas id="realtimeChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h2>Spoilage Risk</h2>
+            <div id="riskLevel" class="risk-box">Loading...</div>
+        </div>
+    </section>
+
+    <section class="history">
+        <h2>Historical Records</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Temperature (°C)</th>
+                    <th>Humidity (%)</th>
+                    <th>Predicted Risk</th>
+                </tr>
+            </thead>
+            <tbody id="historyTable"></tbody>
+        </table>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/firebase-sim.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
