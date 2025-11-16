@@ -1,20 +1,5 @@
 [
-    {
-        "timestamp": "2025-01-01 10:00",
-        "temp": 29,
-        "humidity": 68,
-        "risk": "LOW"
-    },
-    {
-        "timestamp": "2025-01-01 11:00",
-        "temp": 33,
-        "humidity": 78,
-        "risk": "MODERATE"
-    },
-    {
-        "timestamp": "2025-01-01 12:00",
-        "temp": 37,
-        "humidity": 88,
-        "risk": "HIGH"
-    }
+    {"timestamp": "2025-01-01 10:00", "temp": 29, "humidity": 68, "risk": "LOW"},
+    {"timestamp": "2025-01-01 11:00", "temp": 33, "humidity": 78, "risk": "MODERATE"},
+    {"timestamp": "2025-01-01 12:00", "temp": 37, "humidity": 88, "risk": "HIGH"}
 ]
