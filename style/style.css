@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -11,18 +12,32 @@ header {
     color: white;
 }
 
+header h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+}
+
+/* Dashboard */
 .dashboard {
     display: flex;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
     background: white;
     padding: 20px;
     flex: 1;
+    min-width: 300px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px #aaa;
+    margin-bottom: 20px;
 }
 
 .risk-box {
@@ -32,19 +47,77 @@ header {
     font-weight: bold;
     border-radius: 10px;
     background: #ddd;
+    transition: background 0.3s ease;
 }
 
+/* History Table */
 .history {
     padding: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto; /* Horizontal scroll for small screens */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     background: white;
+    min-width: 500px; /* ensure table doesn't collapse too much */
 }
 
 th, td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Canvas responsive */
+canvas {
+    width: 100% !important;
+    height: 250px !important;
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .risk-box {
+        font-size: 28px;
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .risk-box {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    canvas {
+        height: 200px !important;
+    }
 }
