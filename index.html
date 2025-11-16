@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wa-ize: Maize Storage Monitoring</title>
-    <meta property="og:title" content="Maize Website Demo" />
     <link rel="stylesheet" href="style/style.css" />
 </head>
 
@@ -28,17 +27,19 @@
 
     <section class="history">
         <h2>Historical Records</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Timestamp</th>
-                    <th>Temperature (°C)</th>
-                    <th>Humidity (%)</th>
-                    <th>Predicted Risk</th>
-                </tr>
-            </thead>
-            <tbody id="historyTable"></tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Temperature (°C)</th>
+                        <th>Humidity (%)</th>
+                        <th>Predicted Risk</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTable"></tbody>
+            </table>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -46,4 +47,3 @@
     <script src="js/app.js"></script>
 </body>
 </html>
-
