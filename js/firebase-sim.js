@@ -1,5 +1,4 @@
-// Simulated Firebase Real-Time Database
-
+// Simulated Real-Time Data
 const fakeDB = {
     temp: 28,
     humidity: 65,
@@ -7,12 +6,10 @@ const fakeDB = {
 };
 
 function getRealtimeData(callback) {
-    // Simulate new sensor readings every 3 seconds
     setInterval(() => {
         fakeDB.temp = 25 + Math.random() * 10;
         fakeDB.humidity = 55 + Math.random() * 25;
         fakeDB.timestamp = Date.now();
-
         callback(fakeDB);
     }, 3000);
 }
