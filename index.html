@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wa-ize: Maize Storage Monitoring</title>
-    <link rel="stylesheet" href="style/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wa-ize: Maize Storage Monitoring Dashboard</title>
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style/style.css" />
+
+  <!-- Optional: OG meta for better previews (won't hurt even if image not set) -->
+  <meta property="og:title" content="Wa-ize: Maize Storage Monitoring Dashboard" />
+  <meta property="og:description" content="Automatic maize storage environmental monitoring and spoilage risk prediction with real-time microclimate visualization." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-site-name.netlify.app/" />
 </head>
 
 <body>
-    <header>
-        <h1>Wa-ize: Maize Storage Environmental Monitoring</h1>
-        <p>Automatic environmental stabilization & spoilage risk prediction</p>
-    </header>
+  <header>
+      <h1>Wa-ize: Maize Storage Environmental Monitoring</h1>
+      <p>Automatic environmental stabilization & spoilage risk prediction</p>
+  </header>
 
-    <section class="dashboard">
-        <div class="card">
-            <h2>Real-Time Microclimate</h2>
-            <canvas id="realtimeChart"></canvas>
-        </div>
+  <section class="dashboard">
+      <div class="card">
+          <h2>Real-Time Microclimate</h2>
+          <canvas id="realtimeChart"></canvas>
+      </div>
 
-        <div class="card">
-            <h2>Spoilage Risk</h2>
-            <div id="riskLevel" class="risk-box">Loading...</div>
-        </div>
-    </section>
+      <div class="card">
+          <h2>Spoilage Risk</h2>
+          <div id="riskLevel" class="risk-box">Loading...</div>
+      </div>
+  </section>
 
-    <section class="history">
-        <h2>Historical Records</h2>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Timestamp</th>
-                        <th>Temperature (°C)</th>
-                        <th>Humidity (%)</th>
-                        <th>Predicted Risk</th>
-                    </tr>
-                </thead>
-                <tbody id="historyTable"></tbody>
-            </table>
-        </div>
-    </section>
+  <section class="history">
+      <h2>Historical Records</h2>
+      <div class="table-wrapper">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Timestamp</th>
+                      <th>Temperature (°C)</th>
+                      <th>Humidity (%)</th>
+                      <th>Predicted Risk</th>
+                  </tr>
+              </thead>
+              <tbody id="historyTable"></tbody>
+          </table>
+      </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/firebase-sim.js"></script>
-    <script src="js/app.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/firebase-sim.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
