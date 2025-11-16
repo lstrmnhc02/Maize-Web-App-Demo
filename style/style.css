@@ -48,6 +48,24 @@ header p {
     border-radius: 10px;
     background: #ddd;
     transition: background 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Notification */
+.notification {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Device Status */
+.device-status p {
+    margin: 5px 0;
+}
+
+.device-status span {
+    font-weight: bold;
 }
 
 /* History Table */
@@ -56,14 +74,14 @@ header p {
 }
 
 .table-wrapper {
-    overflow-x: auto; /* Horizontal scroll for small screens */
+    overflow-x: auto;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     background: white;
-    min-width: 500px; /* ensure table doesn't collapse too much */
+    min-width: 500px;
 }
 
 th, td {
@@ -78,7 +96,7 @@ canvas {
     height: 250px !important;
 }
 
-/* Media Queries for Mobile */
+/* Media Queries */
 @media screen and (max-width: 768px) {
     .dashboard {
         flex-direction: column;
